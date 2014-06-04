@@ -1,6 +1,6 @@
 ---
 - name: Download Wordpress
-  get_url: url=http://wordpress.org/wordpress-{{ wp_version }}.tar.gz dest=/srv/wordpress-{{ wp_version }}.tar.gz
+  get_url: url=http://ja.wordpress.org/wordpress-{{ wp_version }}-ja.tar.gz dest=/srv/wordpress-{{ wp_version }}.tar.gz
            sha256sum="{{ wp_sha256sum }}"
 
 - name: Extract archive
