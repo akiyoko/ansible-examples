@@ -1,4 +1,9 @@
 ---
+- name: Check if selinux is running
+  command: getenforce
+  register: sestatus
+  changed_when: false
+
 - name: Install libselinux-python
   yum: name=libselinux-python state=present
 
